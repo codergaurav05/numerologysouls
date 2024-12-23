@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Numerology Tools</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#calculator">Numerology Calculator</a></li>
+                <li><a href="#more-tools">More Tools</a></li>
+                <li><a href="logout.html" id="logoutLink">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="calculator" class="tool-section">
+        <h2>Numerology Calculator</h2>
+        <form id="numerologyForm">
+            <input type="text" id="nameInput" placeholder="Enter your full name" required>
+            <input type="date" id="birthdateInput" placeholder="Enter your birthdate" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <section id="more-tools" class="tool-section">
+        <h2>More Tools</h2>
+        <!-- Add more tools here as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Numerology Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="tools.js"></script>
+</body>
+</html>

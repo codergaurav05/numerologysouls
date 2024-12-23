@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <script>
+        // Check if user is logged in and redirect to login page if not
+        if (window.location.pathname === "/" && !isLoggedIn()) {
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <header>
+        <h1>Welcome to Numerology Pro</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#webinars">Webinars</a></li>
+                <li><a href="#" id="toolsButton">Tools</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="logout.html">Logout</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Unlock the Power of Numerology</h2>
+            <p>Discover your potential and shape your future with personalized numerology insights.</p>
+            <a href="#about" class="cta-button">Learn More</a> 
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <h2>Why Choose Us</h2>
+        <p>We combine ancient wisdom with modern techniques to help you unlock the true meaning of your numbers.</p>
+        <div class="blog-posts">
+            <article>
+                <h3>What is Numerology?</h3>
+                <p>Numerology is the study of numbers and how they influence our lives. Dive deep into the world of numbers.</p>
+                <a href="blog-post1.html">Read More</a>
+            </article>
+            <article>
+                <h3>Why Numerology Matters</h3>
+                <p>Numerology helps you understand your strengths, challenges, and life purpose. Find your path today.</p>
+                <a href="blog-post2.html">Read More</a>
+            </article>
+            <article>
+                <h3>Success Stories</h3>
+                <p>Learn how numerology transformed the lives of thousands of our clients worldwide.</p>
+                <a href="success-stories.html">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Numerology Pro. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a> 
+            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a> 
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a> 
+        </div>
+    </footer>
+
+    <div class="login-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
